@@ -15,15 +15,13 @@ Begin installing packages with conda and pip:
 conda install seaborn scikit-learn statsmodels numba pytables
 ```
 ```
-conda install -c conda-forge python-igraph louvain jupyterlab bioconda bbknn
+conda install -c conda-forge python-igraph louvain jupyterlab leidenalg
+```
+```
+conda install -c bioconda bbknn
 ```
 ```
 pip install scanpy fa2 MulticoreTSNE
-```
-Install leidenalg for Leiden clustering:
-```
-conda config --add channels conda-forge
-conda install leidenalg
 ```
 Install Scrublet:
 ```
