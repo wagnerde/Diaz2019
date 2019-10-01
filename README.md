@@ -15,32 +15,21 @@ Begin installing packages with conda and pip:
 conda install seaborn scikit-learn statsmodels numba pytables
 ```
 ```
-conda install -c conda-forge python-igraph louvain
+conda install -c conda-forge python-igraph louvain jupyterlab bioconda bbknn
 ```
 ```
-pip install scanpy
+pip install scanpy fa2 MulticoreTSNE
 ```
+Install leidenalg for Leiden clustering:
 ```
-pip install fa2
-```
-# Install JupyterLab
-conda install -c conda-forge jupyterlab
-
-# Install leidenalg for Leiden clustering
 conda config --add channels conda-forge
 conda install leidenalg
-
-# Install Scrublet
+```
+Install Scrublet:
+```
 git clone https://github.com/AllonKleinLab/scrublet.git
 cd scrublet
 pip install -r requirements.txt
 pip install --upgrade .
-
-# Install MulticoreTSNE
-pip install MulticoreTSNE
-
-# Install bbknn
-conda install -c bioconda bbknn
-
-
 ```
+
