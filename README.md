@@ -6,13 +6,21 @@ Please follow the following instructions to create a Python environment with req
 ```
 conda create --name py36b python=3.6
 ```
-Activate the environment and begin installing packages with conda and pip.  
+Activate the environment:
 ```
 source activate py36
-
+```
+Begin installing packages with conda and pip:
+```  
 conda install seaborn scikit-learn statsmodels numba pytables
+```
+```
 conda install -c conda-forge python-igraph louvain
+```
+```
 pip install scanpy
+```
+```
 pip install fa2
 ```
 # Install JupyterLab
