@@ -2,3 +2,6 @@
 *.csv
 _rawData
 _old
+*_SPRING*
+*.DS_Store*
+*ipynb_checkpoints*
