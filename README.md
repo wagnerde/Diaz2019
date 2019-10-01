@@ -1,17 +1,15 @@
-## Diaz2019
+# Diaz2019
 scRNA-seq data analysis for figures appearing in the following publication: In vitro characterization of the human segmentation clock. Margarete Diaz-Cuadros et. al. (2019)
 
-# Installation
-Please follow the following instructions to create a Python 3.6 environment with required dependencies:
+## Installation
+Please follow the following instructions to create a Python environment with required dependencies.  The first step is to use conda to create a python 3.6 environment:
 ```
-# Python environment 'py36'
 conda create --name py36b python=3.6
 ```
+Activate the environment and begin installing packages with conda and pip.  
 ```
-# Activate py36
 source activate py36
 
-# Install ScanPy & depenencies
 conda install seaborn scikit-learn statsmodels numba pytables
 conda install -c conda-forge python-igraph louvain
 pip install scanpy
