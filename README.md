@@ -2,12 +2,12 @@
 scRNA-seq data analysis for figures appearing in the following publication: In vitro characterization of the human segmentation clock. Margarete Diaz-Cuadros et. al. (2019)
 
 ## Installation
-Start by cloning this repository using git:  
+Start by cloning this repository using git:
 ```
 git clone https://github.com/wagnerde/Diaz2019.git
 cd Diaz2019
 ```
-scRNA-seq data files are too large to include within this Github repo, and must be downloaded separately.  Download and unzip the Diaz et. al. 2019 scRNA-seq data. The unzipped '\_rawData' directory should then reside in the same 'Diaz2019' directory:  
+scRNA-seq data files are too large to include within this Github repo, and must be downloaded separately.  Using the command line, download and unzip the Diaz et. al. 2019 scRNA-seq data. The unzipped '\_rawData' directory should then reside in the same 'Diaz2019' directory:  
 ```
 wget https://kleintools.hms.harvard.edu/paper_websites/diaz_2019/Diaz2019_inDropsCountsTables.zip --no-check-certificate
 unzip Diaz2019_inDropsCountsTables.zip
