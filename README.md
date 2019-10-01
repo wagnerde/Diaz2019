@@ -1,12 +1,13 @@
- # Diaz2019
-scRNA-seq data analysis for figures appearing in the following publication: 
-In vitro characterization of the human segmentation clock. Margarete Diaz-Cuadros et. al. (2019)
+## Diaz2019
+scRNA-seq data analysis for figures appearing in the following publication: In vitro characterization of the human segmentation clock. Margarete Diaz-Cuadros et. al. (2019)
 
+# Installation
 Please follow the following instructions to create a Python 3.6 environment with required dependencies:
 ```
 # Python environment 'py36'
-conda create --name py36 python=3.6
-
+conda create --name py36b python=3.6
+```
+```
 # Activate py36
 source activate py36
 
@@ -15,7 +16,7 @@ conda install seaborn scikit-learn statsmodels numba pytables
 conda install -c conda-forge python-igraph louvain
 pip install scanpy
 pip install fa2
-
+```
 # Install JupyterLab
 conda install -c conda-forge jupyterlab
 
