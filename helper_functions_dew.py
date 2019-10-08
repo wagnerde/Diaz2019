@@ -425,7 +425,8 @@ def plot_confusion_matrix(labels_A, labels_B,
                           cmap=plt.cm.Blues,
                           overlay_values=False,
                           vmin=None,
-                          vmax=None):
+                          vmax=None,
+                          return_data=False):
     '''
     Plots a confusion matrix comparing two sets labels. 
 
@@ -444,6 +445,8 @@ def plot_confusion_matrix(labels_A, labels_B,
 
     # Classes are the unique labels
     classes = np.unique(labels_A.append(labels_B))
+    xaxis_labels = classes[non_empty_cols]
+    yaxis_labels = classes[non_empty_rows]
 
     # Normalize by rows (label B)
     if normalize:
@@ -475,7 +478,7 @@ def plot_confusion_matrix(labels_A, labels_B,
     ax.grid(False)
     ax.set(xticks=np.arange(cm.shape[1]),
            yticks=np.arange(cm.shape[0]),
-           xticklabels=classes[non_empty_cols], yticklabels=classes[non_empty_rows],
+           xticklabels=xaxis_labels, yticklabels=yaxis_labels,
            title=title,
            ylabel=labels_B_name,
            xlabel=labels_A_name)
@@ -502,7 +505,11 @@ def plot_confusion_matrix(labels_A, labels_B,
                         size=8)
     ax.set_aspect('equal') 
     
-    return fig, ax                        
+    if return_data:
+        return fig, ax, cm, xaxis_labels, yaxis_labels                        
+    else:
+        return fig, ax                   
+
 
 # DIFFERENTIAL EXPRESSION
 

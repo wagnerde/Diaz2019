@@ -6,3 +6,5 @@ _old
 *.DS_Store*
 *ipynb_checkpoints*
 *.zip
+export/*/
+*__pycache__*
