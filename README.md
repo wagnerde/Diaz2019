@@ -1,5 +1,7 @@
-# Diaz2019
-scRNA-seq data analysis for figures appearing in the following publication: In vitro characterization of the human segmentation clock. Margarete Diaz-Cuadros et. al. (2019)
+# Diaz2020
+scRNA-seq data analysis for figures appearing in the following publication: 
+
+Diaz-Cuadros M*, Wagner DE*, Budjan C, Hubaud A, Tarazona OA, Donelly S, Michaut A, Al Tanoury Z, Yoshioka-Kobayashi K, Niino Y, Kageyama R, Miyawaki A, Touboul J & Pourquié O. In vitro characterization of the human segmentation clock.  Nature 2020. doi.org/10.1038/s41586-019-1885-9. 
 
 ## Installation
 Start by cloning this repository using git:
